@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "algobharat-pqc-quantum-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Algorand",
+        "PROJECT_TICKER": "ABPQC"
+      },
+      "tools": [
+        {
+          "name": "verify_abpqc_invariants",
+          "description": "Verifies deterministic invariants for AlgoBharat PQC Quantum AI on Algorand."
+        },
+        {
+          "name": "execute_abpqc_action",
+          "description": "Executes authenticated Security state transition."
+        }
+      ]
+    }
+  }
+}
